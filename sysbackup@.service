@@ -1,0 +1,6 @@
+[Unit]
+Description=Backup the system
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/libexec/sysbackup %i

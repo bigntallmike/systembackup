@@ -1,0 +1,10 @@
+[Unit]
+Description=Incremental backup on week days
+
+[Timer]
+OnCalendar=Mon,Tue,Wed,Thu,Fri,Sat 18:00:00
+Unit=sysbackup@1.service
+
+[Install]
+WantedBy=timers.target
+
